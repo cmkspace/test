@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Lotto Pro - Lucky Numbers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <main class="container">
+    <header>
+      <h1>Lotto <span class="highlight">Pro</span></h1>
+      <p>Click the button to generate your lucky numbers.</p>
+    </header>
+
+    <div id="balls-container" class="balls-grid">
+      <div class="placeholder-text">Your numbers will appear here</div>
+    </div>
+
+    <div class="actions">
+      <button id="generate-btn" class="primary-btn">
+        Generate Numbers
+        <span class="icon">✨</span>
+      </button>
+    </div>
+
+    <footer>
+      <p>© 2026 Lotto Pro. Good luck!</p>
+    </footer>
+  </main>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
